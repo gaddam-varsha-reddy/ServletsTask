@@ -1,7 +1,10 @@
 com\demo\connection\MySQLConnectionUtility.class
 com\demo\implementations\JdbcUserManager.class
-com\demo\implementations\UserManager.class
+com\demo\servlet\UserServlet.class
 Main.class
 com\demo\implementations\InMemoryStorageUserManager.class
-com\demo\servlet\servlet.class
+com\demo\servlet\LogoutServlet.class
 com\demo\model\User.class
+com\demo\servlet\LoginServlet.class
+com\demo\interfaceManager\UserManager.class
+com\demo\filter\AuthenticationFilter.class

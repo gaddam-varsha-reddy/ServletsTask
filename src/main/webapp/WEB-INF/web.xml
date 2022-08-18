@@ -6,11 +6,35 @@
     <display-name>Archetype created web application</display-name>
 
     <servlet>
-        <servlet-name>servlet</servlet-name>
+        <servlet-name>UserServlet</servlet-name>
         <servlet-class>com.demo.servlet.UserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>servlet</servlet-name>
+        <servlet-name>UserServlet</servlet-name>
         <url-pattern>/users/*</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.demo.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.demo.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>AuthenticationFilter</filter-name>
+        <filter-class>com.demo.filter.AuthenticationFilter</filter-class>
+    </filter>
+    <filer-mapping>
+        <filter-name>AuthenticationFilter</filter-name>
+        <url-pattern>/users/*</url-pattern>
+    </filer-mapping>
 </web-app>

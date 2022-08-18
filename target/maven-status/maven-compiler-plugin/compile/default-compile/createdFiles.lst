@@ -1,0 +1,7 @@
+com\demo\connection\MySQLConnectionUtility.class
+com\demo\implementations\JdbcUserManager.class
+com\demo\implementations\UserManager.class
+Main.class
+com\demo\implementations\InMemoryStorageUserManager.class
+com\demo\servlet\servlet.class
+com\demo\model\User.class

@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -16,11 +17,14 @@ public class LoginServlet extends HttpServlet {
                 session.invalidate();
             }
             HttpSession newsession=request.getSession(true);
-            newsession.setMaxInactiveInterval(4*60);
-            response.getWriter().write("Login Successful");
+            newsession.setMaxInactiveInterval(1*60);
+            response.getWriter().write("Login Successful!!");
+            response.getWriter().write(" Welcome, "+username);
+            //newsession.setAttribute("username",username);
         }
         else{
             response.getWriter().write("Invalid login credentials");
         }
     }
 }
+

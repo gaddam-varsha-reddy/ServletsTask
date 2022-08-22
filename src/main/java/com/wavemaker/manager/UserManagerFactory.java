@@ -1,4 +1,4 @@
-package com.wavemaker.controller;
+package com.wavemaker.manager;
 import com.wavemaker.constants.PersistentType;
 import com.wavemaker.manager.UserManager;
 import com.wavemaker.manager.implementations.InMemoryStorageUserManager;

@@ -1,5 +1,6 @@
 package com.wavemaker.controller;
 import com.wavemaker.manager.UserManager;
+import com.wavemaker.manager.UserManagerFactory;
 import com.wavemaker.model.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import javax.servlet.ServletException;

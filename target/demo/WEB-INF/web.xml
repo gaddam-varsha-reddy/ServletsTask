@@ -7,7 +7,7 @@
 
     <servlet>
         <servlet-name>UserServlet</servlet-name>
-        <servlet-class>com.demo.servlet.UserServlet</servlet-class>
+        <servlet-class>com.wavemaker.controller.UserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UserServlet</servlet-name>
@@ -15,7 +15,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>com.demo.servlet.LoginServlet</servlet-class>
+        <servlet-class>com.wavemaker.filters.LoginFilter</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
@@ -23,7 +23,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>LogoutServlet</servlet-name>
-        <servlet-class>com.demo.servlet.LogoutServlet</servlet-class>
+        <servlet-class>com.wavemaker.filters.LogoutFilter</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
@@ -34,7 +34,7 @@
     </session-config>
     <filter>
         <filter-name>AuthenticationFilter</filter-name>
-        <filter-class>com.demo.filter.AuthenticationFilter</filter-class>
+        <filter-class>com.wavemaker.filters.AuthenticationFilter</filter-class>
     </filter>
     <filer-mapping>
         <filter-name>AuthenticationFilter</filter-name>
